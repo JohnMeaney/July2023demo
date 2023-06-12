@@ -1,0 +1,90 @@
+header#author-name-banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header#author-name-banner p{
+    align-self: center;
+}
+
+p#author-name{
+    background-color: lightblue;
+    font-size: 400%;
+}
+
+p#author-quote{
+    background-color: darkolivegreen;
+}
+
+
+section#triptych-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* distribution along the main axis */
+    align-items: center;     /* distribution along the cross axis */
+    /*align-content: center;       ... this property only applies to multi-line flex boxes  */
+}
+
+div.tri-panel { /* all the divs that are flex items inside triptych-panel flex container */
+    height: 50vh;
+    font-size: 300%;
+    flex-grow: 1; /* equal weighting to all 3 items */
+    text-align: center; /* this will centre the <p> elements (and similar) inside the div */
+    border: 10px;
+ /*   border-color: blueviolet;
+    border-style: groove; */
+}
+
+#panelOne {
+    background-image: url("images/SF.jpg");
+    background-size: cover;
+}
+
+#panelTwo {
+    background-image: url("images/fantasy.jpg");
+    background-size: cover;
+}
+
+#panelThree {
+    background-image: url("images/thrillers.jpg");
+    background-size: cover;
+}
+
+.tri-panel:hover { 
+    font-size: 400%;
+}
+
+.tri-panel > p { /* all the paras inside divs that are flex items inside triptych-panel */
+    color: greenyellow;
+}
+
+
+.wide-panel {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+ /*   animation-name: morphTheWidePanel;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;    */
+}
+
+/*
+@keyframes morphTheWidePanel {
+    from {
+        background-color: rgb(14, 46, 2);
+    } 
+    to {
+        background-color: rgb(70, 30, 60);
+    }
+
+}
+
+*/
+#thriller-panel {
+    background-image: url(images/thrillers.jpg);
+    height: 100vh;
+    transform: scale(1);
+    animation: backgroundPan 60s ease-in-out 1s infinite;
+}
