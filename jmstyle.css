@@ -37,17 +37,17 @@ div.tri-panel { /* all the divs that are flex items inside triptych-panel flex c
 }
 
 #panelOne {
-    background-image: url("images/SF.jpg");
+    background-image: url("SF.jpg");
     background-size: cover;
 }
 
 #panelTwo {
-    background-image: url("images/fantasy.jpg");
+    background-image: url("fantasy.jpg");
     background-size: cover;
 }
 
 #panelThree {
-    background-image: url("images/thrillers.jpg");
+    background-image: url("thrillers.jpg");
     background-size: cover;
 }
 
